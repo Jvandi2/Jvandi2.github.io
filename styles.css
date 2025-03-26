@@ -1,0 +1,136 @@
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f67104, #0095ff,  #000000);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* My header styling */
+header {
+    background: linear-gradient(to right, #000000, #0095ff, #f67104);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.headerCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(255, 136, 0);
+}
+
+/* For my main layout */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background: linear-gradient(to right, #000000, #0095ff, #f67104);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* The Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background: linear-gradient(to right, #000000, #0095ff, #f67104);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* For my images */
+img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+/* I initially had a border for my images but I think the design looks better without one, but if my images have to have a boarder to meet the assignment requirements the code is below 
+   border: 2px double #000000;  
+    border-radius: 8px; */
+}
+
+/* For my Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff8000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #cc6600;
+}
+
+footer {
+    background: linear-gradient(to right, #000000, #0095ff, #f67104);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
